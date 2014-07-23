@@ -29,10 +29,12 @@ CREATE TABLE property(property_id SERIAL PRIMARY KEY, name VARCHAR(10), units IN
 ###Questions
 Write down the following sql statements that are required to solve the following tasks.
 
-```    
+  
 1. Show all the tables.
+```  
 SELECT * FROM owners;
 SELECT * FROM properties;
+```  
 2. Show all the users. 
 3. Show all the data in the owners table.
 SELECT * FROM owners;
@@ -53,7 +55,7 @@ SELECT * FROM owners;
 18. Show the names of the first three owners in your owners table.
 19. Create a foreign key that references the owner_id in the owners table and forces the constraint ON DELETE NO ACTION. 
 20. Show all of the information from the owners table and the properties table in one joined table.  
-```
+
 Bonus (this might require you to look up documentation online)
 
 ```
