@@ -5,6 +5,11 @@
 CREATE DATABASE apartmentlab;
 ``` 
 - Using this database, create two tables, one for owners and one for properties
+``` 
+CREATE TABLE owners(owner_id SERIAL PRIMARY KEY, name VARCHAR(10), age INTEGER NOT NULL);
+
+CREATE TABLE property(property_id SERIAL PRIMARY KEY, name VARCHAR(10), units INTEGER NOT NULL, owner_id INTEGER NOT NULL);
+``` 
 - Keep this relationship in mind when designing your schema:
   + **One owner can have many properties**
 
@@ -26,8 +31,11 @@ Write down the following sql statements that are required to solve the following
 
 ```    
 1. Show all the tables.
+SELECT * FROM owners;
+SELECT * FROM properties;
 2. Show all the users. 
 3. Show all the data in the owners table.
+SELECT * FROM owners;
 4. Show the names of all owners. 
 5. Show the ages of all of the owners in ascending order. 
 6. Show the name of an owner whose name is Donald. 
