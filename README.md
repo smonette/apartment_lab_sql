@@ -39,9 +39,8 @@ SELECT * FROM owners, properties;
 
 Show all the users. 
 
-I found this on a lot of forums, but it doesn't work on my machine?
 ```
-SELECT * FROM sys.database_principals
+/dg
 ```
 
 Show all the data in the owners table.
@@ -143,6 +142,7 @@ SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 
 In the properties table change the name of the column "name" to "property_name". 
 ```
+ALTER TABLE properties RENAME COLUMN name to property_name;
 ```
 
 Count the total number of properties where the owner_id is between 1 and 3.
