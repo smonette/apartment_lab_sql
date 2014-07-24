@@ -141,6 +141,9 @@ Show all of the information from the owners table and the properties table in on
 ```
 SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 ```
+```
+SELECT owners.name, properties.name FROM owners JOIN properties ON owners.owner_id = properties.owner_id;
+```
 
 
 
@@ -148,10 +151,13 @@ SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 
 In the properties table change the name of the column "name" to "property_name". 
 ```
-ALTER TABLE properties RENAME COLUMN name to property_name;
+ALTER TABLE properties RENAME COLUMN "name" to "property_name";
 ```
 
 Count the total number of properties where the owner_id is between 1 and 3.
 ```
 SELECT COUNT(*) FROM properties WHERE owner_id > 0 AND owner_id < 4;
+```
+```
+SELECT COUNT(*) FROM properties WHERE owner_id BETWEEN 1 AND 3;
 ```
