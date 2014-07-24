@@ -130,6 +130,7 @@ Create a foreign key that references the owner_id in the owners table and forces
 
 Show all of the information from the owners table and the properties table in one joined table.  
 ```
+SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 ```
 
 
