@@ -36,11 +36,17 @@ Show all the tables.
 ```  
 SELECT * FROM owners, properties;
 ```  
+```
+/dt
+```
 
 Show all the users. 
 
 ```
 /dg
+```
+```
+/du
 ```
 
 Show all the data in the owners table.
