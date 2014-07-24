@@ -34,8 +34,7 @@ Write down the following sql statements that are required to solve the following
   
 Show all the tables.
 ```  
-SELECT * FROM owners;
-SELECT * FROM properties;
+SELECT * FROM owners, properties;
 ```  
 
 Show all the users. 
@@ -100,7 +99,8 @@ Delete the owner named Jane.
 DELETE FROM owners WHERE name='Jane';
 ```
 
-Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5.```
+Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5.
+```
 ```
 
  
