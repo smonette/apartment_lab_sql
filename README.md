@@ -147,4 +147,5 @@ ALTER TABLE properties RENAME COLUMN name to property_name;
 
 Count the total number of properties where the owner_id is between 1 and 3.
 ```
+SELECT COUNT(*) FROM properties WHERE owner_id > 0 AND owner_id < 4;
 ```
