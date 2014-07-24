@@ -137,7 +137,10 @@ SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 
 Bonus (this might require you to look up documentation online)
 
+In the properties table change the name of the column "name" to "property_name". 
 ```
-1. In the properties table change the name of the column "name" to "property_name". 
-2. Count the total number of properties where the owner_id is between 1 and 3.
+```
+
+Count the total number of properties where the owner_id is between 1 and 3.
+```
 ```
