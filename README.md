@@ -135,7 +135,7 @@ SELECT * FROM owners JOIN properties ON owners.owner_id=properties.owner_id;
 
 
 
-Bonus (this might require you to look up documentation online)
+###Bonus
 
 In the properties table change the name of the column "name" to "property_name". 
 ```
