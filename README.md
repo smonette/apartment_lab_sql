@@ -32,43 +32,60 @@ ALTER TABLE properties ADD CONSTRAINT owner_fk FOREIGN KEY (owner_id) REFERENCES
 Write down the following sql statements that are required to solve the following tasks.
 
   
-1. Show all the tables.
+Show all the tables.
 ```  
 SELECT * FROM owners;
 SELECT * FROM properties;
 ```  
-2. Show all the users. 
-3. Show all the data in the owners table.
+
+Show all the users. 
+```
+```
+
+Show all the data in the owners table.
 ```
 SELECT * FROM owners;
 ```
-4. Show the names of all owners. 
+Show the names of all owners. 
 ```
 SELECT * FROM owners;
 ```
-5. Show the ages of all of the owners in ascending order. 
+
+Show the ages of all of the owners in ascending order. 
 ```
 SELECT * FROM owners ORDER BY first_name ASC;
 ```
-6. Show the name of an owner whose name is Donald. 
-7. Show the age of all owners who are older than 30. 
-8. Show the name of all owners whose name starts with an E. 
-9. Add an owner named John who is 33 years old to the owners table.
+
+Show the name of an owner whose name is Donald. 
+```
+SELECT * FROM owners WHERE name='Donald';
+```
+
+Show the age of all owners who are older than 30. 
+Show the name of all owners whose name starts with an E.
+```
+SELECT * FROM owners WHERE name='E%';
+```
+
+Add an owner named John who is 33 years old to the owners table.
 ```
 INSERT INTO owners (name, age) VALUES ('John', 33); 
 ```
-10. Add an owner named Jane who is 43 years old to the owners table. 
+
+Add an owner named Jane who is 43 years old to the owners table. 
 ```
 INSERT INTO owners (name, age) VALUES ('Jane', 33); 
 ```
-11. Change Jane's age to 30. 
+
+Change Jane's age to 30. 
 ```
 UPDATE owners SET age='30' WHERE age='43';
 ```
-12. Change Jane's name to Janet. 
+Change Jane's name to Janet. 
 ```
 UPDATE owners SET name='Janet' WHERE name='Jane';
 ```
+
 13. Add a property named Archstone that has 20 units. 
 14. Delete the owner named Jane. 
 15. Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5. 
