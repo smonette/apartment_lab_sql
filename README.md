@@ -92,6 +92,7 @@ UPDATE owners SET name='Janet' WHERE name='Jane';
 
 Add a property named Archstone that has 20 units. 
 ```
+INSERT INTO properties (name, units, owner_id) VALUES ('Archstone', 20, 1);
 ```
 
 Delete the owner named Jane.
@@ -106,6 +107,7 @@ Show all of the properties in alphabetical order that are not named Archstone an
  
 Count the total number of rows in the properties table.
 ```
+SELECT COUNT(*) properties;
 ```
 
 
