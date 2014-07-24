@@ -126,6 +126,7 @@ SELECT * FROM owners LIMIT 3 OFFSET 1;
 
 Create a foreign key that references the owner_id in the owners table and forces the constraint ON DELETE NO ACTION.
 ```
+ALTER TABLE properties ADD CONSTRAINT owner_fk FOREIGN KEY (owner_id) REFERENCES owners (owner_id) ON DELETE NO ACTION;
 ```
 
 Show all of the information from the owners table and the properties table in one joined table.  
