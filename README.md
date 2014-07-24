@@ -102,6 +102,7 @@ DELETE FROM owners WHERE name='Jane';
 
 Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5.
 ```
+SELECT * FROM properties WHERE name NOT LIKE 'Archstone'AND property_id NOT IN (3,5) ORDER BY name ASC;
 ```
 
  
