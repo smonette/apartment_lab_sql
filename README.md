@@ -61,7 +61,11 @@ Show the name of an owner whose name is Donald.
 SELECT * FROM owners WHERE name='Donald';
 ```
 
-Show the age of all owners who are older than 30. 
+Show the age of all owners who are older than 30.
+```
+SELECT * FROM owners WHERE age > 30;
+```
+
 Show the name of all owners whose name starts with an E.
 ```
 SELECT * FROM owners WHERE name='E%';
@@ -81,19 +85,51 @@ Change Jane's age to 30.
 ```
 UPDATE owners SET age='30' WHERE age='43';
 ```
+
 Change Jane's name to Janet. 
 ```
 UPDATE owners SET name='Janet' WHERE name='Jane';
 ```
 
-13. Add a property named Archstone that has 20 units. 
-14. Delete the owner named Jane. 
-15. Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5. 
-16. Count the total number of rows in the properties table.
-17. Show the highest age of all owners.
-18. Show the names of the first three owners in your owners table.
-19. Create a foreign key that references the owner_id in the owners table and forces the constraint ON DELETE NO ACTION. 
-20. Show all of the information from the owners table and the properties table in one joined table.  
+Add a property named Archstone that has 20 units. 
+```
+```
+
+Delete the owner named Jane.
+```
+DELETE FROM owners WHERE name='Jane';
+```
+
+Show all of the properties in alphabetical order that are not named Archstone and do not have an id of 3 or 5.```
+```
+
+ 
+Count the total number of rows in the properties table.
+```
+```
+
+
+Show the highest age of all owners.
+```
+SELECT MAX(age) FROM owners;
+```
+
+
+Show the names of the first three owners in your owners table.
+```
+SELECT * FROM owners LIMIT 3 OFFSET 1;
+```
+
+
+Create a foreign key that references the owner_id in the owners table and forces the constraint ON DELETE NO ACTION.
+```
+```
+
+Show all of the information from the owners table and the properties table in one joined table.  
+```
+```
+
+
 
 Bonus (this might require you to look up documentation online)
 
