@@ -38,7 +38,10 @@ SELECT * FROM owners, properties;
 ```  
 
 Show all the users. 
+
+I found this on a lot of forums, but it doesn't work on my machine?
 ```
+SELECT * FROM sys.database_principals
 ```
 
 Show all the data in the owners table.
